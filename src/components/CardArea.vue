@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <Card>
-        <InputArea @enteredValue="receiveEnteredValue"/>
+        <InputArea/>
             <template #title>Görevler</template>
             <template #content>
                 <InputArea/>
@@ -17,9 +17,7 @@ import InputArea from './InputArea.vue';
 export default {
     el: '#app', 
     data(){
-        return{
-
-        }
+        return{}
     },
     components: {
         Card,
@@ -28,7 +26,7 @@ export default {
 
     data() {
         return {
-          receiveEnteredValue : ''  
+            
         };
     },
 }
