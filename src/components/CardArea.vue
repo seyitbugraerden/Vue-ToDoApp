@@ -1,12 +1,10 @@
 <template>
     <div id="app">
         <Card>
-            <template #title>{{title}}</template>
+        <InputArea @enteredValue="receiveEnteredValue"/>
+            <template #title>Görevler</template>
             <template #content>
-                <p class="m-0">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                    quas!
-                </p>
+                <InputArea/>
             </template>
         </Card>
     </div>
@@ -14,18 +12,23 @@
 
 <script>
 import Card from 'primevue/card';
+import InputArea from './InputArea.vue';
 
 export default {
-    props : ['title'],
-    el: '#app', // Mount point selector
+    el: '#app', 
+    data(){
+        return{
 
+        }
+    },
     components: {
-        Card
+        Card,
+        InputArea
     },
 
     data() {
         return {
-            // Your data here if needed
+          receiveEnteredValue : ''  
         };
     },
 }
