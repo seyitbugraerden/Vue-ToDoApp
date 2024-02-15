@@ -41,3 +41,33 @@ export default {
     }
 }
 </script>
+<style>
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.task button {
+    transform: scale(0.8);
+    transform-origin: right;
+}
+
+.task:nth-child(even) {
+    background-color: rgba(162, 168, 211, 0.1);
+}
+
+.task span {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.InputArea {
+    margin-bottom: 50px;
+}
+
+
+</style>
