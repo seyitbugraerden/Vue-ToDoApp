@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <CardArea :title="titleData"/>
+    <InputArea/>
+    <CardArea/>
   </div>
 </template>
 
 <script>
 import CardArea from './components/CardArea.vue';
+import InputArea from './components/InputArea.vue';
 export default {
   data(){
     return{
-      titleData : 'Gönderilen Veri'
     }
   },
   components : {
-    CardArea
+    CardArea,
+    InputArea
   },
 }
 </script>
