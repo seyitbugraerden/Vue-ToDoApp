@@ -1,22 +1,14 @@
 <template>
   <div id="app">
-  
+    <InputArea/>
   </div>
 </template>
 
 <script>
-import data from "./data/db.json";
-
+import InputArea from './components/InputArea.vue';
 export default {
-  data() {
-    return{
-      
-    }
+  components : {
+    InputArea
   },
-  methods: {
-    search(event) {
-      alert()
-    }
-  }
 }
 </script>
