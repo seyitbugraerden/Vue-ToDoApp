@@ -1,10 +1,10 @@
 <template>
     <div id="app">
         <Card>
-        <InputArea/>
             <template #title>Görevler</template>
             <template #content>
-                <InputArea/>
+                <InputArea @enteredValue="enteredNewValue = $event" />
+                <p>{{ enteredNewValue }}</p>
             </template>
         </Card>
     </div>
@@ -15,19 +15,14 @@ import Card from 'primevue/card';
 import InputArea from './InputArea.vue';
 
 export default {
-    el: '#app', 
-    data(){
-        return{}
-    },
     components: {
         Card,
         InputArea
     },
-
     data() {
         return {
-            
+            enteredNewValue: ''
         };
-    },
+    }
 }
 </script>

@@ -22,6 +22,8 @@ export default {
     methods: {
         AddTask() {
             console.log(this.value);
+            this.$emit("enteredValue", this.value)
+            this.value = ''
         }
     }
 }
