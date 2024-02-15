@@ -79,3 +79,10 @@ button:focus-visible {
 }
 
 ul {list-style-type: none;}
+button{color: white;}
+.task{display: flex;justify-content: space-between;margin: 10px 0px;align-items: center;}
+.task button{scale: .8;transform-origin: right;}
+.InputArea{margin-bottom: 50px;}
+.task:nth-child(even){background-color: rgb(162, 168, 211, .1);}
+.task span{max-width: 200px;text-wrap: wrap;overflow: hidden;text-overflow: ellipsis;
+}
