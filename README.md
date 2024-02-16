@@ -1,7 +1,4 @@
-# Vue 3 + Vite
+<h2>Vue ToDoApp</h2>
+<p>You can manage your taskes and you can add new taskes.</p>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![pic1](https://github.com/seyitbugraerden/Vue-ToDoApp/assets/154025499/b1ed6b27-4d2c-4ae8-af19-f5b7699b883b)
