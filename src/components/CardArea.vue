@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <Card>
-            <template #title>Görevler</template>
+            <template #title>Taskes</template>
             <template #content>
                 <div class="InputArea"><InputArea @enteredValue="addTask" /></div>
                 <div class="taskArae">
-                    <div class="task" v-for="task in taskList" :key="task.id"><span :title="task.text">{{ task.text }}</span> <button @click="deleteTask(task.id)">Delete</button></div>   
+                    <div class="task" v-for="task in taskList" :key="task.id"><span :title="task.text">{{ task.text }}</span> <button @click="deleteTask(task.id)">Completed</button></div>   
                 </div>
             </template>
         </Card>
@@ -16,6 +16,7 @@
 import { nanoid } from 'nanoid';
 import Card from 'primevue/card';
 import InputArea from './InputArea.vue';
+import data from '../data/db.json'
 
 export default {
     components: {
@@ -24,7 +25,7 @@ export default {
     },
     data() {
         return {
-            taskList : []
+            taskList : data
         };
     },
     methods : {
